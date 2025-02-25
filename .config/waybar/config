@@ -1,0 +1,140 @@
+{
+  "layer": "top", // Расположение панели: "top", "bottom", "left", "right"
+  "position": "top", // Позиция панели ("top", "bottom", "left", "right")
+  "height": 30, // Высота панели (в пикселях)
+  "width": "100%", // Ширина панели (можно указать в процентах или в пикселях)
+  "modules-left": [
+    "hyprland/workspaces",
+    "mpris"
+  ],
+  "modules-center": [
+    "hyprland/window"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "network",
+    "memory",
+    "cpu",
+    "temperature",
+    "battery",
+    "hyprland/language",
+    "clock",
+    "tray"
+  ],
+  "tray-position": "right",
+  //------Модули------
+  "hyprland/window": {
+    "format": "{}",
+    "separate-outputs": true
+  },
+  "tray": {
+    "icon-size": 20,
+    "spacing": 10
+  },
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "{:%Y-%m-%d %H:%M}"
+  },
+  "cpu": {
+    "format": "  {usage}%",
+    "tooltip": false
+  },
+  "memory": {
+    "format": "  {used} GIB",
+    "tooltip": false
+  },
+  "temperature": {
+    "critical-threshold": 80,
+    "format": "{icon}  {temperatureC}°C",
+    "format-icons": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}% {icon}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon} {format_source}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "scroll-step": 5
+  },
+  "network": {
+    "format-wifi": "{essid}",
+    "format-ethernet": "{ipaddr}",
+    "format-disconnected": "⚠ Disconnected"
+  },
+  "mpris": {
+    "format": "{player_icon}  {artist} - {title}",
+    "format-paused": "{status_icon}  {artist} - {title}",
+    "player-icons": {
+      "default": "",
+      "spotifyd": "",
+      "spotify": ""
+    },
+    "status-icons": {
+      "paused": ""
+    }
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "sort-by-name": false,
+    "all-outputs": true,
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "urgent": "",
+      "focused": "",
+      "default": ""
+    },
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
+    },
+    "sort-by-number": true
+  },
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "English",
+    "format-ru": "Русский"
+  },
+}

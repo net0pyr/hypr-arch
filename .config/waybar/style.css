@@ -1,0 +1,65 @@
+.modules-right,
+.modules-left,
+.modules-center {
+    margin: 4px;
+}
+
+.modules-right>*>*,
+.modules-left,
+.modules-center {
+    border-radius: 12px;
+}
+
+#window {
+    background-color: #191919;
+    border-radius: 12px;
+    padding: 0px 12px;
+}
+
+#workspaces button {
+    font-weight: 400;
+    padding: 0 5px;
+    background: none;
+    border: none;
+    border-radius: 1000px;
+    border: solid 2px #3f3a33;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    background-color: #3f3a33;
+    color: #fff;
+    border: solid 2px #494b31;
+}
+
+#mpris {
+    padding: 0 6px;
+    font-weight: normal;
+    background-color: #272118;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 0px 12px;
+}
+
+window#waybar {
+    /* border-radius: 1000px; */
+    font-weight: bold;
+}
+
+
+#window {
+    background-color: #3f3a33;
+    border-radius: 12px;
+    padding: 0px 12px;
+}
+
+.modules-left {
+    background-color: #272118;
+}
+
+.modules-right>*>* {
+    padding: 0px 12px;
+    font-weight: normal;
+    background-color: #272118;
+    margin-left: 8px
+}
