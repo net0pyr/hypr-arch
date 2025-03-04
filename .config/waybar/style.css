@@ -8,6 +8,7 @@
 .modules-left,
 .modules-center {
     border-radius: 12px;
+    color: #bf8d02
 }
 
 #window {
@@ -23,12 +24,13 @@
     border: none;
     border-radius: 1000px;
     border: solid 2px #3f3a33;
+    color: #bf8d02;
 }
 
 #workspaces button.focused,
 #workspaces button.active {
     background-color: #3f3a33;
-    color: #fff;
+    color: #738044;
     border: solid 2px #494b31;
 }
 
@@ -42,7 +44,8 @@
 }
 
 window#waybar {
-    /* border-radius: 1000px; */
+    /*border-radius: 1000px;*/
+    background-color: rgba(40,40,40,0);
     font-weight: bold;
 }
 
